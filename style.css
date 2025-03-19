@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #c0c0e6; /* Sage Green */
+    background-color: #6c6c6f; /* Sage Green */
 }
 
 /* Style for the introduction section containing name and bio */
@@ -36,4 +36,159 @@ body {
 /* Ensure all text inside the hero section is white */
 .hero h1, .hero p {
     color: white;
+}
+
+/* Style for the Carousel */
+#projectCarousel {
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Ensure images fit well */
+#projectCarousel img {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+#projectCarousel {
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Drop shadow effect */
+#projectCarousel img {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+#projectCarousel:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+/* Increase Image Size */
+#intro img {
+    width: 250px; /* Adjust width as needed */
+    height: 250px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border: 5px solid white; /* Optional border */
+}
+
+/* Increase Background Box Size */
+#intro {
+    background-color: #2c3e50; /* Dark background color */
+    color: white; /* White text */
+    padding: 120px 45px; /* Increase padding */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+/* Intro Section - Cool Effects */
+#intro {
+    background-color: #2c3e50; /* Dark background */
+    color: white;
+    padding: 80px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+#intro:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.4); /* Glow effect */
+}
+
+/* Image Animation */
+#intro img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid white;
+    transition: transform 0.5s ease-in-out;
+}
+
+#intro img:hover {
+    transform: scale(1.1) rotate(3deg); /* Slight zoom & rotation */
+}
+
+/* Floating Effect */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+#intro h1, #intro p {
+    animation: floating 4s infinite ease-in-out;
+}
+
+/* Fade-In Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+/* Animated Background */
+body {
+    background: linear-gradient(-45deg, #454446, #6f6c70, #a595a3, #bbb8ba);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white; /* Adjust text color for better contrast */
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Custom Resume Button */
+#resume .btn-primary {
+    background-color: #9f4a7c; /* Custom Green */
+    border-color: #c32f96; 
+    color: white; /* Text color */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+/* Softwares Section */
+#softwares {
+    background-color: #ad77ab; /* Light Grey Background */
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+/* Software Box Styling */
+.software-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo Images */
+.software-box img {
+    width: 70%;
+    height: auto;
+}
+
+/* Hover Effect */
+.software-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
