@@ -1,0 +1,39 @@
+.card {
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container, .navbar, .footer, .btn {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+body {
+    background-color: #c0c0e6; /* Sage Green */
+}
+
+/* Style for the introduction section containing name and bio */
+.hero {
+    background-color: #2f2945; /* Light Sage Green */
+    padding: 30px;
+    border-radius: 15px; /* Curved edges */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: white; /* Make text white */
+}
+
+/* Ensure all text inside the hero section is white */
+.hero h1, .hero p {
+    color: white;
+}
