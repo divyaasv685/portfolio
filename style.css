@@ -21,16 +21,17 @@
 }
 
 body {
-    background-color: #6c6c6f; /* Sage Green */
+    background-color: #6c6c6f; 
 }
 
 /* Style for the introduction section containing name and bio */
 .hero {
     background-color: #2f2945; /* Light Sage Green */
-    padding: 30px;
+    padding: 50px;
     border-radius: 15px; /* Curved edges */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    color: white; /* Make text white */
+    color: white; 
+    align-items: end;/* Make text white */
 }
 
 /* Ensure all text inside the hero section is white */
@@ -40,7 +41,7 @@ body {
 
 /* Style for the Carousel */
 #projectCarousel {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     border-radius: 15px;
     overflow: hidden;
@@ -48,18 +49,12 @@ body {
 
 /* Ensure images fit well */
 #projectCarousel img {
-    height: 600px;
+    height: 1200px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-#projectCarousel {
-    max-width: 1200px;
-    margin: auto;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+
 
 /* Drop shadow effect */
 #projectCarousel img {
@@ -150,16 +145,7 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-/* Custom Resume Button */
-#resume .btn-primary {
-    background-color: #9f4a7c; /* Custom Green */
-    border-color: #c32f96; 
-    color: white; /* Text color */
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 8px; /* Rounded corners */
-    transition: all 0.3s ease-in-out;
-}
+
 /* Softwares Section */
 #softwares {
     background-color: #ad77ab; /* Light Grey Background */
@@ -191,4 +177,303 @@ body {
 .software-box:hover {
     transform: scale(1.1);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+/* Softwares Section */
+#softwares {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+/* Software Box Styling */
+.software-item {
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo Images */
+.software-item img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect */
+.software-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+/* Heading "Softwares Known" in Black */
+#softwares h2 {
+    color: black;
+    font-weight: bold;
+}
+
+/* Software Names in Black */
+.software-item h4 {
+    color: black;
+    font-weight: 500;
+}
+
+
+/* Icons */
+.contact-icon {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Links */
+#contact a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    padding: 20px 40px;
+    background: #1f1f1f;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.timeline-item:hover {
+    transform: scale(1.05);
+    background: #b46ca5;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background: #2f2945;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* Custom Download Button */
+.btn-custom {
+    background: #2f2945;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background: #0056b3;
+}
+/* Project Container */
+.project-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Project Box */
+.project-box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+/* Project Image */
+.project-box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Project Info */
+.project-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: bottom 0.4s ease-in-out;
+}
+
+/* Hover Effect */
+.project-box:hover .project-info {
+    bottom: 0;
+}
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <div class="row">
+        <!-- Left Side: Contact Info -->
+        <div class="col-md-5">
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Call Us</h4>
+                    <p>+1 5589 55488 55</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Us</h4>
+                    <p>info@example.com</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799142063!2d-74.2598758322862!3d40.69767006353706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b25b8e8db3%3A0x5938bdeeb55b37b3!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1614156397288!5m2!1sen!2sus"
+                        width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="col-md-7">
+            <form action="#" method="POST" class="contact-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+
+                <button type="submit" class="btn btn-primary btn-block mt-3">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+/* Ensure carousel images maintain aspect ratio */
+.carousel-item img {
+    width: 100%; /* Ensure full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+    max-height: 500px; /* Adjust height as needed */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('intro\ 2.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding-left: 10%;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 500px;
+}
+
+/* Title */
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.hero .subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+/* Underline Effect */
+.hero .highlight {
+    position: relative;
+    font-weight: bold;
+}
+
+.hero .highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #00ff99;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #00ff99;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+    }
 }
